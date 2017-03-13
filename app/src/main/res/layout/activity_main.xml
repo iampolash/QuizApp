@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/relative_layout"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/header_style"
+            android:text="@string/header_1" />
+
+        <EditText
+            android:id="@+id/name_editText_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/editText_hint"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/header_style"
+            android:gravity="center_horizontal"
+            android:text="@string/header_2" />
+
+        <ScrollView style="@style/default_layout">
+
+            <LinearLayout
+                style="@style/default_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/questions_style"
+                    android:text="@string/Q1" />
+
+                <RadioGroup style="@style/rdo_grp_style">
+
+                    <RadioButton
+                        android:id="@+id/donut_rdo_btn"
+                        style="@style/rdo_btn"
+                        android:onClick="onRadioBtnSelectQ1"
+                        android:text="@string/donut" />
+
+                    <RadioButton
+                        android:id="@+id/lolipop_rdo_btn"
+                        style="@style/rdo_btn"
+                        android:onClick="onRadioBtnSelectQ1"
+                        android:text="@string/lolipop" />
+
+                    <RadioButton
+                        android:id="@+id/marshmallow_rdo_btn"
+                        style="@style/rdo_btn"
+                        android:onClick="onRadioBtnSelectQ1"
+                        android:text="@string/marshmallow" />
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/questions_style"
+                    android:text="@string/Q2" />
+
+                <LinearLayout
+                    style="@style/default_layout"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/TextView_checkbox"
+                        style="@style/checkBox_style"
+                        android:onClick="onCheckBoxCheckedQ2"
+                        android:text="@string/txt_view" />
+
+                    <CheckBox
+                        android:id="@+id/StringView_checkbox"
+                        style="@style/checkBox_style"
+                        android:onClick="onCheckBoxCheckedQ2"
+                        android:text="@string/string_view" />
+
+                    <CheckBox
+                        android:id="@+id/ImageView_checkBox"
+                        style="@style/checkBox_style"
+                        android:onClick="onCheckBoxCheckedQ2"
+                        android:text="@string/img_view" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/questions_style"
+                    android:text="@string/Q3" />
+
+                <RadioGroup style="@style/rdo_grp_style">
+
+                    <RadioButton
+                        android:id="@+id/package_rdo_btn"
+                        style="@style/rdo_btn"
+                        android:onClick="onRadioBtnSelectQ3"
+                        android:text="@string/pkg" />
+
+                    <RadioButton
+                        android:id="@+id/assets_rdo_btn"
+                        style="@style/rdo_btn"
+                        android:onClick="onRadioBtnSelectQ3"
+                        android:text="@string/assets" />
+
+                    <RadioButton
+                        android:id="@+id/layout_rdo_btn"
+                        style="@style/rdo_btn"
+                        android:onClick="onRadioBtnSelectQ3"
+                        android:text="@string/layout" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    style="@style/questions_style"
+                    android:text="@string/Q4" />
+
+                <LinearLayout
+                    style="@style/default_layout"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtView_Q4"
+                        android:text="@string/parent" />
+
+                    <TextView
+                        style="@style/txtView_Q4"
+                        android:text="@string/child" />
+
+                    <TextView
+                        style="@style/txtView_Q4"
+                        android:text="@string/linear_view" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/answer_editText_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/Q4_answer_hint"
+                    android:inputType="textCapWords" />
+
+                <TextView
+                    style="@style/questions_style"
+                    android:text="@string/Q5" />
+
+                <LinearLayout
+                    style="@style/default_layout"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/v5View_checkbox"
+                        style="@style/checkBox_style"
+                        android:onClick="onCheckBoxCheckedQ5"
+                        android:text="@string/v_5.0" />
+
+                    <CheckBox
+                        android:id="@+id/v7View_checkbox"
+                        style="@style/checkBox_style"
+                        android:onClick="onCheckBoxCheckedQ5"
+                        android:text="@string/v_7.1.1" />
+
+                    <CheckBox
+                        android:id="@+id/v6View_checkBox"
+                        style="@style/checkBox_style"
+                        android:onClick="onCheckBoxCheckedQ5"
+                        android:text="@string/v_6.0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/default_layout"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <Button
+                        android:id="@+id/result_button_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onResultBtnClicked"
+                        android:text="@string/result_btn" />
+
+                    <Button
+                        android:id="@+id/sendto_button_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onSendToBtnClicked"
+                        android:text="@string/snd_to_email" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="reset"
+                    android:text="@string/rst_btn" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

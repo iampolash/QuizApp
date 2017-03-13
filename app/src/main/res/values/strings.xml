@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="header_1">Android Basic Questions</string>
+    <string name="editText_hint">Please Put Your Name Here</string>
+    <string name="header_2">***Tik Can Have multiple Answers***</string>
+    <string name="Q1">1. What is the first version of Android ?</string>
+    <string name="donut">Donut</string>
+    <string name="lolipop">Lolipop</string>
+    <string name="marshmallow">Marshmallow</string>
+    <string name="Q2">2. Which of these are views in Android ?</string>
+    <string name="txt_view">TextView</string>
+    <string name="string_view">StringView</string>
+    <string name="img_view">ImageView</string>
+    <string name="Q3">3. A __________ is a container for views ?</string>
+    <string name="pkg">package</string>
+    <string name="assets">assets</string>
+    <string name="layout">layout</string>
+    <string name="Q4">4. Which View contains other view ?</string>
+    <string name="parent">a. Parent </string>
+    <string name="child">b. Child</string>
+    <string name="linear_view">c. LinearView</string>
+    <string name="Q4_answer_hint">Write full answer</string>
+    <string name="Q5">5. Which version of android is currently running ?</string>
+    <string name="v_5.0">5.0</string>
+    <string name="v_7.1.1">7.1.1</string>
+    <string name="v_6.0">6.0</string>
+    <string name="result_btn">Result</string>
+    <string name="snd_to_email">Send to Email</string>
+    <string name="rst_btn">Reset</string>
+</resources>
